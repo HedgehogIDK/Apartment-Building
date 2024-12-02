@@ -39,4 +39,15 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Apartment.inl">
+      <Filter>Файлы заголовков</Filter>
+    </None>
+    <None Include="Home.inl">
+      <Filter>Файлы заголовков</Filter>
+    </None>
+    <None Include="Human.inl">
+      <Filter>Файлы заголовков</Filter>
+    </None>
+  </ItemGroup>
 </Project>

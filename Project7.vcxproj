@@ -137,6 +137,11 @@
     <ClInclude Include="Home.h" />
     <ClInclude Include="Human.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Apartment.inl" />
+    <None Include="Home.inl" />
+    <None Include="Human.inl" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
