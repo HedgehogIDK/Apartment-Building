@@ -3,3 +3,6 @@ Browse.VC.opendb
 *.exe
 **/.vs
 **/x64
+Browse.VC.db
+Browse.VC.db-shm
+
