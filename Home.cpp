@@ -33,11 +33,9 @@ Home::Home(int numApart_p, int numFloor_p) {
 }
 
 Home::Home(const Home& obj) {
-    if (this != &obj) {
-        delete[] apartmentArr;
+    delete[] apartmentArr;
 
-        numApart = obj.numApart;
-        numFloor = obj.numFloor;
-        apartmentArr = obj.apartmentArr;
-    }
+    numApart = obj.numApart;
+    numFloor = obj.numFloor;
+    apartmentArr = obj.apartmentArr;
 }

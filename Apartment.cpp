@@ -62,14 +62,11 @@ Apartment::Apartment(int number_p, int floor_p, int sizeArr_p) {
 }
 
 Apartment::Apartment(const Apartment& Apart) {
-	if (this != &Apart) {
-
-
-		number = Apart.number;
-		floor = Apart.floor;
-		sizeArr = Apart.sizeArr;
-		humanArr = Apart.humanArr;
-	}
+	number = Apart.number;
+	floor = Apart.floor;
+	sizeArr = Apart.sizeArr;
+	humanArr = Apart.humanArr;
+	
 }
 
 
