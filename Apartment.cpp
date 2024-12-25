@@ -65,8 +65,13 @@ Apartment::Apartment(const Apartment& Apart) {
 	number = Apart.number;
 	floor = Apart.floor;
 	sizeArr = Apart.sizeArr;
-	humanArr = Apart.humanArr;
 	
+	humanArr = new Human[sizeArr];
+
+	for (size_t i = 0; i < sizeArr; i++)
+	{
+		humanArr[i] = Apart.humanArr[i];
+	}
 }
 
 

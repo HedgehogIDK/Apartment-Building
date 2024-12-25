@@ -33,9 +33,12 @@ Home::Home(int numApart_p, int numFloor_p) {
 }
 
 Home::Home(const Home& obj) {
-    delete[] apartmentArr;
-
     numApart = obj.numApart;
     numFloor = obj.numFloor;
-    apartmentArr = obj.apartmentArr;
+
+    apartmentArr = new Apartment[obj.numApart];
+
+    for (int i = 0;i < numApart;i++) {
+        apartmentArr[i] = obj.apartmentArr[i];
+    }
 }
