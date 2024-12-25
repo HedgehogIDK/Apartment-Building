@@ -8,25 +8,15 @@ void Human::setFullName(const char* fullName_p) {
 	strcpy_s(fullName, strlen(fullName_p) + 1, fullName_p);
 }
 
-void Human::setYear(int year_p) {
-	year = year_p;
-}
+void Human::setYear(int year_p) { year = year_p; }
 
-void Human::setPhone(const char* Phone_p) {
-	strcpy_s(Phone, SIZEPhone, Phone_p);
-}
+void Human::setPhone(const char* Phone_p) { strcpy_s(Phone, SIZEPhone, Phone_p); }
 
-int Human::getYear()const {
-	return year;
-}
+int Human::getYear()const { return year; }
 
-const char* Human::getFullName()const {
-	return fullName;
-}
+const char* Human::getFullName()const { return fullName; }
 
-const char* Human::getPhone()const {
-	return Phone;
-}
+const char* Human::getPhone()const { return Phone; }
 
 Human::Human(const char* fullName_p, const char* Phone_p, int year_p) :year{ year_p } {
 	if (fullName_p == nullptr) {

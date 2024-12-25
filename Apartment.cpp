@@ -23,33 +23,19 @@ void Apartment::setHuman() {
 		humanArr[i].setYear(buffer);
 	}
 }
-void Apartment::setSizeArr(int sizeArr_p) {
-	sizeArr = sizeArr_p;
-}
+void Apartment::setSizeArr(int sizeArr_p) { sizeArr = sizeArr_p; }
 
-int Apartment::getSizeArr()const  {
-	return sizeArr;
-}
+int Apartment::getSizeArr()const { return sizeArr; }
 
-void Apartment::setNumber(int number_p) {
-	number = number_p;
-}
+void Apartment::setNumber(int number_p) { number = number_p; }
 
-void Apartment::setFloor(int floor_p) {
-	floor = floor_p;
-}
+void Apartment::setFloor(int floor_p) { floor = floor_p; }
 
-Human* Apartment::getHuman() const {
-	return humanArr;
-}
+Human* Apartment::getHuman() const { return humanArr; }
 
-int Apartment::getFloor() const{
-	return floor;
-}
+int Apartment::getFloor() const { return floor; }
 
-int Apartment::getNumber() const{
-	return number;
-}
+int Apartment::getNumber() const { return number; }
 
 Apartment::Apartment(int number_p, int floor_p, int sizeArr_p) {
 	if (sizeArr_p > 0) {
@@ -77,9 +63,13 @@ Apartment::Apartment(int number_p, int floor_p, int sizeArr_p) {
 
 Apartment::Apartment(const Apartment& Apart) {
 	if (this != &Apart) {
+
+
 		number = Apart.number;
 		floor = Apart.floor;
 		sizeArr = Apart.sizeArr;
 		humanArr = Apart.humanArr;
 	}
 }
+
+
